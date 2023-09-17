@@ -16,7 +16,9 @@
   <body>
     <header class="container mx-auto">
       <nav>
-        <div class="nav__top flex justify-between items-center py-4">
+        <div
+          class="nav__top max-[480px]:hidden flex justify-between items-center py-4"
+        >
           <a href="#" class="top__left text-[#2A254B]">
             <i class="fas fa-search"></i>
           </a>
@@ -30,8 +32,21 @@
             <a href="#"><i class="fa-regular fa-circle-user"></i></a>
           </div>
         </div>
-        <hr />
-        <div class="nav__bottom py-4">
+        <div
+          class="min-[481px]:hidden mx-6 flex justify-between items-center py-4"
+        >
+          <a href="#" class="brend font-normal text-2xl text-[#22202E]"
+            >Avion</a
+          >
+          <div
+            class="top__right flex items-center justify-center gap-4 text-[#2A254B]"
+          >
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
+        <hr class="max-[480px]:hidden" />
+        <div class="nav__bottom max-[480px]:hidden py-4">
           <ul
             class="flex justify-center gap-11 font-normal text-base text-[#726E8D]"
           >
@@ -47,23 +62,36 @@
       </nav>
 
       <head>
-        <div class="head__info py-16 px-20 flex justify-between">
-          <div class="head__left p-16 bg-[#2A254B] text-white">
-            <h1 class="mb-10 w-[65%] font-normal text-3xl">
+        <div
+          class="head__info max-[480px]:w-full max-[480px]:p-0 py-16 px-20 flex justify-between"
+        >
+          <div
+            class="head__left max-[480px]:px-6 max-[480px]:pt-10 max-[480px]:py-6 p-16 bg-[#2A254B] text-white"
+          >
+            <h1
+              class="max-[480px]:w-full max-[480px]:leading-relaxed mb-10 w-[65%] font-normal text-3xl"
+            >
               The furniture brand for the future, with timeless designs
             </h1>
             <button
-              class="mb-48 py-4 px-8 transition-all duration-300 ease-in-out bg-[#F9F9F926] hover:bg-[#F9F9F940] text-base font-normal"
+              class="max-[480px]:hidden mb-48 py-4 px-8 transition-all duration-300 ease-in-out bg-[#F9F9F926] hover:bg-[#F9F9F940] text-base font-normal"
             >
               View collection
             </button>
-            <p>
+            <p
+              class="max-[480px]:mt-20 max-[480px]:mb-8 max-[480px]:text-lg max-[480px]:leading-normal max-[480px]:tracking-wide"
+            >
               A new era in eco friendly furniture with Avelon, the French luxury
               retail brand with nice fonts, tasteful colors and a beautiful way
               to display things digitally using modern web technologies.
             </p>
+            <button
+              class="min-[481px]:hidden py-4 px-8 w-full transition-all duration-300 ease-in-out bg-[#F9F9F926] hover:bg-[#F9F9F940] text-base font-normal"
+            >
+              View collection
+            </button>
           </div>
-          <div class="head__right flex w-[70%]">
+          <div class="max-[480px]:hidden head__right flex w-[70%]">
             <img src="./imgs/right_img.png" alt="" />
           </div>
         </div>
@@ -71,11 +99,15 @@
     </header>
 
     <main>
-      <div class="services container mx-auto px-20 pt-16 pb-20">
-        <h2 class="mb-12 text-center text-2xl text-[#2A254B] font-normal">
+      <div
+        class="services max-[480px]:px-6 max-[480px]:pb-0 container mx-auto px-20 pt-16 pb-20"
+      >
+        <h2
+          class="max-[480px]:text-start mb-12 text-center text-2xl text-[#2A254B] font-normal"
+        >
           What makes our brand different
         </h2>
-        <div class="flex justify-between gap-14">
+        <div class="max-[480px]:flex-wrap flex justify-between gap-14">
           <div class="">
             <i class="mb-4 fa-solid fa-truck-fast"></i>
             <h3 class="mb-2 text-xl text-[#2A254B] font-normal">
@@ -117,9 +149,13 @@
         </div>
       </div>
 
-      <div class="ceramics container mx-auto px-20 pt-20 pb-14">
+      <div
+        class="ceramics max-[480px]:px-6 max-[480px]:pb-0 container mx-auto px-20 pt-20 pb-14"
+      >
         <h2 class="mb-8 text-3xl text-[#2A254B] font-normal">New ceramics</h2>
-        <div class="mb-9 flex gap-5 justify-between">
+        <div
+          class="max-[480px]:grid max-[480px]:grid-cols-2 max-[480px]:gap-4 mb-9 flex gap-5 justify-between"
+        >
           <div
             class="transition-all duration-300 ease-in-out hover:transform hover:scale-105"
           >
@@ -159,20 +195,24 @@
         </div>
         <div class="text-center">
           <button
-            class="py-4 px-8 bg-[#F9F9F9] text-base font-normal transition-all duration-300 ease-in-out hover:bg-[#2a254b15]"
+            class="max-[480px]:w-full py-4 px-8 bg-[#F9F9F9] text-base font-normal transition-all duration-300 ease-in-out hover:bg-[#2a254b15]"
           >
             View collection
           </button>
         </div>
       </div>
 
-      <div class="products container mx-auto px-20 pt-20 pb-14">
+      <div
+        class="products max-[480px]:px-6 max-[480px]:pb-0 container mx-auto px-20 pt-20 pb-14"
+      >
         <h2 class="mb-8 text-3xl text-[#2A254B] font-normal">
           Our popular products
         </h2>
-        <div class="mb-9 flex gap-5 justify-between">
+        <div
+          class="max-[480px]:grid max-[480px]:grid-cols-2 max-[480px]:gap-4 mb-9 flex gap-5 justify-between"
+        >
           <div
-            class="transition-all duration-300 ease-in-out hover:transform hover:scale-105 hover:translate-x-4"
+            class="max-[480px]:hidden transition-all duration-300 ease-in-out hover:transform hover:scale-105 hover:translate-x-4"
           >
             <img class="mb-6" src="./imgs/Large.png" alt="" />
             <h4 class="mb-2 text-xl text-[#2A254B] font-normal">
@@ -201,30 +241,39 @@
         </div>
         <div class="text-center">
           <button
-            class="py-4 px-8 bg-[#F9F9F9] text-base font-normal transition-all duration-300 ease-in-out hover:bg-[#2a254b15]"
+            class="max-[480px]:w-full py-4 px-8 bg-[#F9F9F9] text-base font-normal transition-all duration-300 ease-in-out hover:bg-[#2a254b15]"
           >
             View collection
           </button>
         </div>
       </div>
 
-      <div class="join py-14 px-20 bg-[#F9F9F9]">
-        <div class="container mx-auto py-16 text-center bg-white">
+      <div
+        class="join max-[480px]:px-6 max-[480px]:pb-0 max-[480px]:bg-white py-14 px-20 bg-[#F9F9F9]"
+      >
+        <div
+          class="max-[480px]:text-start container mx-auto py-16 text-center bg-white"
+        >
           <h2 class="mb-4 text-4xl text-[#2A254B] font-normal">
             Join the club and get the benefits
           </h2>
-          <p class="mb-16 w-[32%] mx-auto text-lg text-[#2A254B] font-normal">
+          <p
+            class="max-[480px]:m-0 max-[480px]:w-full max-[480px]:mb-16 mb-16 w-[32%] mx-auto text-lg text-[#2A254B] font-normal"
+          >
             Sign up for our newsletter and receive exclusive offers on new
             ranges, sales, pop up stores and more
           </p>
-          <label class="flex gap-0 items-center justify-center" for="">
+          <label
+            class="max-[480px]:w-full max-[344px]:block flex gap-0 items-center justify-center"
+            for=""
+          >
             <input
-              class="py-4 pl-8 w-[25%] outline-none bg-[#F9F9F9]"
+              class="max-[344px]:mb-5 max-[344px]:w-full max-[440px]:w-[60%] max-[480px]:w-[70%] py-4 pl-8 w-[25%] outline-none bg-[#F9F9F9]"
               type="text"
               placeholder="your@email.com"
             />
             <button
-              class="py-4 px-8 bg-[#2A254B] text-base text-white font-normal"
+              class="max-[344px]:w-full py-4 px-8 bg-[#2A254B] text-base text-white font-normal"
             >
               Sign up
             </button>
@@ -233,11 +282,17 @@
       </div>
 
       <div class="feature flex relative">
-        <div class="container mx-auto py-[61px] px-16">
-          <h2 class="mb-6 w-[36%] text-2xl text-[#2A254B] font-normal">
+        <div
+          class="max-[360px]:pb-[340px] max-[420px]:pb-[400px] max-[480px]:px-6 min-[481px]:container min-[481px]:mx-auto py-[61px] min-[481px]:px-16 max-[480px]:pb-[440px]"
+        >
+          <h2
+            class="max-[480px]:w-full mb-6 w-[36%] text-2xl text-[#2A254B] font-normal"
+          >
             From a studio in London to a global brand with over 400 outlets
           </h2>
-          <p class="mb-48 w-[36%] text-base text-[#2A254B] font-normal">
+          <p
+            class="max-[480px]:w-full max-[480px]:mb-16 mb-48 w-[36%] text-base text-[#2A254B] font-normal"
+          >
             When we started Avion, the idea was simple. Make high quality
             furniture affordable and available for the mass market. <br />
             <br />
@@ -246,21 +301,25 @@
             for the London interior design community.
           </p>
           <button
-            class="py-4 px-8 bg-[#F9F9F9] text-base font-normal transition-all duration-300 ease-in-out hover:bg-[#2a254b15]"
+            class="max-[480px]:w-full py-4 px-8 bg-[#F9F9F9] text-base font-normal transition-all duration-300 ease-in-out hover:bg-[#2a254b15]"
           >
             Get in touch
           </button>
         </div>
-        <div class="absolute right-0">
+        <div class="max-[480px]:bottom-0 absolute right-0">
           <img src="./imgs/feature.png" alt="" />
         </div>
       </div>
     </main>
 
     <footer class="bg-[#2A254B]">
-      <div class="container mx-auto px-20 pt-14">
-        <div class="mb-8 flex justify-between gap-40 text-white">
-          <div class="flex justify-between w-[50%]">
+      <div class="max-[480px]:px-6 container mx-auto px-20 pt-14">
+        <div
+          class="max-[480px]:block mb-8 flex justify-between gap-40 text-white"
+        >
+          <div
+            class="max-[480px]:w-full max-[480px]:flex-wrap max-[480px]:gap-24 max-[480px]:justify-start max-[480px]:mb-10 flex justify-between w-[50%]"
+          >
             <ul>
               <li class="mb-3 text-base font-normal">Menu</li>
               <li class="mb-2">
@@ -320,16 +379,19 @@
             </ul>
           </div>
 
-          <div class="w-[50%]">
+          <div class="max-[480px]:w-full w-[50%]">
             <h3 class="mb-3 text-base font-normal">Join our mailing list</h3>
-            <label class="flex gap-0 items-center" for="">
+            <label
+              class="max-[344px]:w-full max-[344px]:block flex gap-0 items-center"
+              for=""
+            >
               <input
-                class="py-4 pl-8 w-[80%] outline-none bg-[#f9f9f915] text-white"
+                class="max-[344px]:mb-5 max-[344px]:w-full max-[440px]:w-[60%] max-[480px]:w-[70%] py-4 pl-8 w-[80%] outline-none bg-[#f9f9f915] text-white"
                 type="text"
                 placeholder="your@email.com"
               />
               <button
-                class="py-4 px-8 bg-white text-base text-[#2A254B] font-normal"
+                class="max-[344px]:w-full py-4 px-8 bg-white text-base text-[#2A254B] font-normal"
               >
                 Sign up
               </button>
@@ -337,9 +399,11 @@
           </div>
         </div>
         <hr />
-        <div class="py-6 flex items-center justify-between text-white">
+        <div
+          class="max-[480px]:justify-center py-6 flex items-center justify-between text-white"
+        >
           <h3 class="text-base font-normal">Copyright 2022 Avion LTD</h3>
-          <div class="flex gap-6">
+          <div class="max-[480px]:hidden flex gap-6">
             <a href="#">
               <i class="text-2xl fab fa-linkedin"></i>
             </a>
